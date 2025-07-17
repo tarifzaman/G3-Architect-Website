@@ -137,6 +137,22 @@ main>section {
 
 }
 
+#exp-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px
+}
+
+#exp-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.feature-architect img {
+    width: 100%;
+}
 
 /* some facts */
 .flash-card {
@@ -187,11 +203,30 @@ main>section {
     filter: grayscale(100%);
 }
 
+
+/* footer style  */
+.footer {
+    background-color: #fff4e7;
+    /* light orange tone */
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 80px auto 0;
+    /* center & give top margin */
+}
+
+.footer-text {
+    color: #727272;
+    font-size: 1rem;
+}
+
 /* responsive media query */
 @media screen and (max-width : 576px) {
 
     .navbar,
     .nav-link,
+    .features,
     .teams {
         flex-direction: column;
     }
@@ -218,23 +253,49 @@ main>section {
 
     .flash-card {
         margin: 0 auto;
-
     }
 
-
-
-    @media screen and (min-width : 576px) and (max-width:992px) {
-        .teams {
-            flex-direction: column;
-        }
-
-        .our-title {
-            margin-left: 50px auto;
-        }
-
-        .sponsor-companies,
-        .facts-container {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 50px;
-        }
+    #exp-badge {
+        margin-top: 20px;
+        margin-left: 20px;
     }
+
+    .footer {
+        margin: 40px 20px 0;
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width : 576px) and (max-width:992px) {
+
+    .teams,
+    .features {
+        flex-direction: column;
+    }
+
+    .our-title {
+        margin-left: 50px auto;
+    }
+
+    .sponsor-companies,
+    .facts-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+
+    #exp-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .footer {
+        margin: 60px 40px 0;
+        padding: 25px;
+        font-size: 1rem;
+    }
+}
